@@ -6,11 +6,9 @@ import App from './App';
 import Todo from './todo/List';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <Route path="/" component={App} exact />
-      <Route path="/todo" component={Todo} />
-    </Router>
-  </React.StrictMode>,
+  <Router>
+    <Route path="/" component={App} exact />
+    <Route path="/todo" component={Todo} />
+  </Router>,
   document.getElementById('root')
 );
